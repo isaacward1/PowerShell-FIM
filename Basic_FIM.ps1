@@ -4,7 +4,7 @@
 2. File created = monitored file's path AND hash do not exist in the baseline.
 3. File altered = monitored file's path exists in the basline, but not its hash.
 4. File deleted =  basline file's path AND hash are not found.
-5. File rename alerts are based on the existence of a file's hash in baseline and new list.
+5. File renamed = monitored file's hash exists in the basline, but not its path.
 6. Files altered AND renamed are treated as "created" files, where 
    the original file (baseline path/hash comination) is assumed to be "deleted".
 
