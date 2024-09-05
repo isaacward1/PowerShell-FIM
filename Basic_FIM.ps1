@@ -8,10 +8,8 @@
 6. Files altered AND renamed are treated as "created" files, where 
    the original file (baseline path/hash comination) is assumed to be "deleted".
 
-#>
 
-
-#------------------Setup--------------------------------#
+#------------------Setup--------------------------------#>
 $monlist = @()
 $filelist = @()
 $folderlist = @()
