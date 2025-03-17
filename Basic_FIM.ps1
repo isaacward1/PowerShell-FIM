@@ -1,12 +1,12 @@
 ﻿<#------------------Assumptions & Methodology-----------#
 
 1. Assumes all files within monitored environment are content-unique (No duplicates).
-2. File created = monitored file's path AND hash do not exist in the baseline.
-3. File altered = monitored file's path exists in the basline, but not its hash.
-4. File deleted =  basline file's path AND hash are not found.
-5. File renamed = monitored file's hash exists in the basline, but not its path.
+2. File created = current (new) file's path AND hash do not exist in the baseline.
+3. File deleted = old file's path AND hash do not exist in the baseline.
+4. File altered = current file's path exists in the basline, but not its hash.
+5. File renamed = current file's hash exists in the basline, but not its path.
 6. Files altered AND renamed are treated as "created" files, where 
-   the original file (baseline path/hash comination) is assumed to be "deleted".
+   the original file (baseline path/hash combination) is assumed to be "deleted".
 
 
 #------------------Setup--------------------------------#>
